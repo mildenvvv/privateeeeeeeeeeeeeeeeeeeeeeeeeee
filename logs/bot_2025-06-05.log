@@ -92,3 +92,17 @@
 2025-06-05 10:49:51 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
 2025-06-05 10:49:54 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
 2025-06-05 10:49:58 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:38:40 | INFO | main:on_startup:28 - 🚀 Running startup tasks...
+2025-06-05 13:38:40 | INFO | access_manager:load_allowed_users:19 - Загружено 4 разрешенных пользователей из allowed_users.txt
+2025-06-05 13:39:58 | INFO | main:on_startup:28 - 🚀 Running startup tasks...
+2025-06-05 13:39:58 | INFO | access_manager:load_allowed_users:19 - Загружено 4 разрешенных пользователей из allowed_users.txt
+2025-06-05 13:39:59 | INFO | main:on_startup:45 - ✅ Webhook set to https://example.com/webhook
+2025-06-05 13:39:59 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=80918, total=500000.
+2025-06-05 13:39:59 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:02 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:05 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:09 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:12 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=80915, total=500000.
+2025-06-05 13:40:12 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:15 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:19 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
