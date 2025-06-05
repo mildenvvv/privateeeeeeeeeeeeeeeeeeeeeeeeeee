@@ -1,0 +1,103 @@
+import aiohttp
+import logging
+from aiogram import Bot, types
+from utils.logger import log
+from config import load_config
+
+config = load_config()
+
+
+class GiftsApi:
+    def __init__(self):
+        self.bot_token: str = config['bot_token']
+
+    async def aio_get_available_gifts(self, session: aiohttp.ClientSession) -> list | None:
+        url = f"https://api.telegram.org/bot{self.bot_token}/getAvailableGifts"
+        try:
+            async with session.get(url) as resp:
+                data = await resp.json()
+                if data.get('ok') is True:
+                    return data.get('result', {}).get('gifts', [])
+                else:
+                    log.error(f"API response error: {data}")
+                    return None
+        except Exception as e:
+            log.error(f"Error while requesting /getAvailableGifts: {e}")
+            return None
+
+    async def aio_get_file_path(self, file_id: str) -> str | None:
+        url = f"https://api.telegram.org/bot{self.bot_token}/getFile?file_id={file_id}"
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url) as resp:
+                    data = await resp.json()
+                    if data.get('ok'):
+                        return data['result']['file_path']
+                    else:
+                        log.error(
+                            f"API response error while getting file path: {data}")
+                        return None
+        except Exception as e:
+            log.error(f"Error while requesting file path: {e}")
+            return None
+
+    async def download_file(self, file_path: str) -> bytes | None:
+        download_url = f"https://api.telegram.org/file/bot{self.bot_token}/{file_path}"
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(download_url) as resp:
+                    if resp.status == 200:
+                        return await resp.read()
+                    else:
+                        raise ValueError(
+                            f"File download error: status {resp.status}")
+        except Exception as e:
+            log.error(f"File download error: {e}")
+            return None
+
+    async def send_thumbnail_photo(self, bot: Bot, chat_id: int, thumb_file_id: str, caption: str) -> None:
+        file_path = await self.aio_get_file_path(thumb_file_id)
+        if not file_path:
+            await bot.send_message(chat_id, f"(Failed to get thumbnail) {caption}")
+            return
+
+        file_content = await self.download_file(file_path)
+        if not file_content:
+            await bot.send_message(chat_id, f"(Failed to download thumbnail) {caption}")
+            return
+
+        input_photo = types.BufferedInputFile(
+            file_content, filename="gift_thumb.webp")
+        try:
+            await bot.send_photo(chat_id, photo=input_photo, caption=caption)
+        except Exception as e:
+            log.warning(
+                f"Failed to send as photo, trying as document. Error: {e}")
+            try:
+                input_document = types.BufferedInputFile(
+                    file_content, filename="gift_thumb.webp")
+                await bot.send_document(chat_id, document=input_document, caption=caption)
+            except Exception as doc_e:
+                log.error(f"Failed to send as document: {doc_e}")
+
+    async def send_gift(self, user_id: int, gift_id: str, pay_for_upgrade: bool = False) -> bool:
+        url = f"https://api.telegram.org/bot{self.bot_token}/sendGift"
+        payload = {
+            "user_id": user_id,
+            "gift_id": gift_id,
+            "pay_for_upgrade": pay_for_upgrade,
+        }
+
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.post(url, json=payload) as resp:
+                    data = await resp.json()
+                    if data.get("ok"):
+                        return True
+                    else:
+                        log.error(
+                            f"Gift sending error: {data.get('description')}")
+                        return False
+        except Exception as e:
+            log.error(f"Error while requesting sendGift: {e}")
+            return False

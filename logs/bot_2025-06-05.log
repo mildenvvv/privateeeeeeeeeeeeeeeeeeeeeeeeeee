@@ -1,0 +1,48 @@
+2025-06-05 10:46:35 | INFO | main:main:35 - Starting bot...
+2025-06-05 10:46:35 | INFO | access_manager:load_allowed_users:19 - Загружено 3 разрешенных пользователей из allowed_users.txt
+2025-06-05 10:46:35 | INFO | main:on_startup_tasks:26 - Initializing database...
+2025-06-05 10:46:35 | INFO | main:on_startup_tasks:28 - Database initialized successfully
+2025-06-05 10:46:35 | INFO | main:on_startup_tasks:30 - Starting gift parsing loop...
+2025-06-05 10:46:35 | INFO | logger:emit:13 - Start polling
+2025-06-05 10:46:35 | INFO | logger:emit:13 - Run polling for bot @skillstufferbot id=7765773913 - '.'
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170145012310081615
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170233102089322756
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170250947678437525
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5168103777563050263
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170144170496491616
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170314324215857265
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170564780938756245
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5168043875654172773
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170690322832818290
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5170521118301225164
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 6028601630662853006
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:103 - Added new gift: 5782984811920491178
+2025-06-05 10:46:35 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:39 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:40 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-05 10:46:40 | WARNING | logger:emit:13 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7765773913)
+2025-06-05 10:46:42 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=81458, total=500000.
+2025-06-05 10:46:42 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:45 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-05 10:46:45 | WARNING | logger:emit:13 - Sleep for 1.197646 seconds and try again... (tryings = 1, bot id = 7765773913)
+2025-06-05 10:46:45 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=81461, total=500000.
+2025-06-05 10:46:45 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:49 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:51 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-05 10:46:51 | WARNING | logger:emit:13 - Sleep for 1.526468 seconds and try again... (tryings = 2, bot id = 7765773913)
+2025-06-05 10:46:52 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=81458, total=500000.
+2025-06-05 10:46:52 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:55 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:46:59 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:02 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:03 | INFO | logger:emit:13 - Connection established (tryings = 3, bot id = 7765773913)
+2025-06-05 10:47:05 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:09 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:12 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:15 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:19 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:22 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:25 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:28 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 10:47:32 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=81457, total=500000.
+2025-06-05 10:47:32 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
