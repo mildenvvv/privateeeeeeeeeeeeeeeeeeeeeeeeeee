@@ -106,3 +106,63 @@
 2025-06-05 13:40:12 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
 2025-06-05 13:40:15 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
 2025-06-05 13:40:19 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:22 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:25 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:40:28 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:11 | INFO | main:on_startup:28 - 🚀 Running startup tasks...
+2025-06-05 13:50:11 | INFO | access_manager:load_allowed_users:19 - Загружено 4 разрешенных пользователей из allowed_users.txt
+2025-06-05 13:50:11 | INFO | main:on_startup:45 - ✅ Webhook set to https://example.com/webhook
+2025-06-05 13:50:11 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=80891, total=500000.
+2025-06-05 13:50:11 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:15 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:18 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:21 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:25 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:28 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:31 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:34 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:38 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:41 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:44 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:48 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:51 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:54 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:50:58 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:51:01 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 13:51:04 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:04:48 | INFO | main:main:35 - Starting bot...
+2025-06-05 14:04:48 | INFO | access_manager:load_allowed_users:19 - Загружено 4 разрешенных пользователей из allowed_users.txt
+2025-06-05 14:04:48 | INFO | main:on_startup_tasks:26 - Initializing database...
+2025-06-05 14:04:48 | INFO | main:on_startup_tasks:28 - Database initialized successfully
+2025-06-05 14:04:48 | INFO | main:on_startup_tasks:30 - Starting gift parsing loop...
+2025-06-05 14:04:48 | INFO | logger:emit:13 - Start polling
+2025-06-05 14:04:48 | INFO | logger:emit:13 - Run polling for bot @skillstufferbot id=7765773913 - '.'
+2025-06-05 14:04:48 | INFO | gift_parser:start_gift_parsing_loop:89 - Updated gift data 5782984811920491178: price=350, remaining=80824, total=500000.
+2025-06-05 14:04:48 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:04:52 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:04:55 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:04:58 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:04:59 | DEBUG | acl:__call__:49 - Доступ разрешен для пользователя 627843971 (message)
+2025-06-05 14:05:00 | INFO | logger:emit:13 - Update id=275802315 is handled. Duration 264 ms by bot id=7765773913
+2025-06-05 14:05:02 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:02 | DEBUG | acl:__call__:49 - Доступ разрешен для пользователя 627843971 (message)
+2025-06-05 14:05:02 | INFO | logger:emit:13 - Update id=275802316 is handled. Duration 108 ms by bot id=7765773913
+2025-06-05 14:05:05 | DEBUG | acl:__call__:49 - Доступ разрешен для пользователя 627843971 (message)
+2025-06-05 14:05:05 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:05 | INFO | logger:emit:13 - Update id=275802317 is handled. Duration 139 ms by bot id=7765773913
+2025-06-05 14:05:06 | DEBUG | acl:__call__:49 - Доступ разрешен для пользователя 627843971 (message)
+2025-06-05 14:05:07 | INFO | logger:emit:13 - Update id=275802318 is handled. Duration 125 ms by bot id=7765773913
+2025-06-05 14:05:08 | DEBUG | acl:__call__:49 - Доступ разрешен для пользователя 627843971 (message)
+2025-06-05 14:05:08 | INFO | logger:emit:13 - Update id=275802319 is handled. Duration 172 ms by bot id=7765773913
+2025-06-05 14:05:08 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:12 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:15 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:18 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:22 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:25 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:28 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:32 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:35 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:38 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:42 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
+2025-06-05 14:05:45 | INFO | gift_parser:start_gift_parsing_loop:107 - Gift list successfully updated in the database.
